@@ -1,13 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Alaskan Malamutes</title>
-</head>
-<body>
-  <style>
+  </head>
+  <body>
+    <style>
       body {
         background: linear-gradient(
           109.6deg,
@@ -103,9 +103,14 @@
         text-align: center;
         padding: 30px;
       }
+
+      @media (max-width: 900px) {
+        body {
+          text-align: center;
+        }
+      }
     </style>
-  </head>
-  <body>
+
     <div class="container">
       <h1><strong>The Most Loving Gentle Giants</strong></h1>
       <h2>
@@ -115,8 +120,8 @@
       <hr />
       <img
         class="firstPic"
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/740/original/Autum-Love.jpeg?1676442529"
-        alt= "Two Alaskan Malamutes in colorful Autum"
+        src="/images/Autum-Love.jpeg"
+        alt="Two Alaskan Malamutes in colorful Autum"
         width="300"
       />
       <hr />
@@ -208,9 +213,7 @@
         This page was coded with 💚 by <b>Míchelle Findley</b>
 
         <img
-          src="
-
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/741/original/Pumpkin-patch.jpg?1676442548"
+          src="/images/Pumpkin-patch.jpg"
           alt="Smiling at my two mals while at the pumpkin patch"
           width="200"
         />
@@ -220,7 +223,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/741/origina
     <script>
       function adopt() {
         let name = prompt("What is your name?");
-        
+
         let age = prompt("How old are you?");
         if (age < 18) {
           alert(
